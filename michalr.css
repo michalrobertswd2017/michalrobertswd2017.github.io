@@ -1,0 +1,20 @@
+body, h1, p, {
+    font-size:  font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+
+    color: darkorchid;
+    margin: 50px 0 25px 0;
+}
+
+body{
+
+    color: cadetblue;
+}
+
+p{
+    font-family: fantasy;
+}
