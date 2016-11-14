@@ -1,10 +1,10 @@
-document.getElementById("myButton").onclick =changeColor;
+document.getElementById("myButton").onclick = changeColor;
 var currentColor = "darkmagenta";
 
-function changeColor(){
+function changeColor() {
    document.body.style.color = "green";
 
-    if (currentColor=="darkmagenta") {
+    if (currentColor == "darkmagenta") {
         document.body.style.color = "green";
         currentColor = "green";
     } else {
