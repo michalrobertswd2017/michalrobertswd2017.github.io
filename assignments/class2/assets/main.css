@@ -1,54 +1,33 @@
 * {box-sizing: border-box}
 
 p {
-    font font-size: 10px;
+     font-size: 25px;
 }
-.bigdiv {
+header {
+    background-color: darksalmon;
     height: 300px;
-    background-color: skyblue;
-    width: auto;
-    border: 3px solid black;
-    position: left;
-}
-
-#childdiv{
-    height: 50px;
-    width: auto;
-    background-color: orchid;
     border: 3px solid black;
 }
 
-.bigdiv div{
-    height: 50px;
-    width: 70px;
-    background-color: aquamarine;
-    border: 3px solid black;
-}
-
-nav div{height: auto;
-        width: 200px;
-        box-sizing: border-box;
-        text-align: left;
-}
 nav {height: 300px;
     width: 200px;
     padding: 30px;
     margin: 10px;
     border: 3px black;
-    text-align:left;
+    position:left;
     background-color: forestgreen;
 }
-main article {
+main {
     height: 1000px;
-    width: 20%;
-    padding: 30px 10px;
-    margin: 5%;
+
+    padding: 30px;
+
     border: 3px solid black;
-    float: left;
+
     background-color: fuchsia;
 }
 footer {
-    clear: fixed;
+
     height: 100px;
     text-align: center;
     background-color: firebrick;
@@ -57,16 +36,22 @@ footer {
 
 }
 figure{
-    float: right;
-}
-section {
-        width: 70%;
-        background-color: darkgrey;
-        float: left;
+    float: left;
 }
 aside {
         background-color: dodgerblue;
         height: 250px;
         width: 200px;
-    float: right;
+
+    border: 3px solid black;
+    position: absolute;
+    right: 0px;
+    top: 628px;
+}
+article {height: 20px;
+    width: 200px;
+        border: 3px solid black;
+    background color: darkred;
+    margin: auto;
+
 }
