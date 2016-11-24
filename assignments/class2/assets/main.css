@@ -14,15 +14,17 @@ nav {height: 300px;
     width: 200px;
     padding: 30px;
     margin: 10px;
-    border: 3px black;
-    position:relative;
+    border: 3px solid black;
+    position:fixed;
     background-color: rosybrown;
     float: left;
+    top: 300px;
+    left: 0;
 }
 main {
     height: 1000px;
 
-    padding: 30px;
+    padding: 200px;
 
     border: 3px solid black;
 
@@ -37,15 +39,16 @@ main {
 }
 
 footer {
-   position: absolute;
+
 
    width:99%;
    height:100px;
-     bottom:-745px;
+     bottom:0px;
    background-color:plum;
     text-align: center;
     border: 3px solid black;
     font-size: 25px;
+    position: fixed;
 }
 
 
@@ -78,8 +81,7 @@ article {height: 80px;
   float: right;
 }
 
-figcaption {float:inherit;
-}
+
 
 
 
