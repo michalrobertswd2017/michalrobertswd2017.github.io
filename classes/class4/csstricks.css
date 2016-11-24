@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #C4C4C4;
+}
+
+header {
+    height: 194px;
+    background: #362C27;
+    position: relative;
+}
+nav {
+    height: 42px;
+    background: #201B14 ;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+.logo{
+    font font-size: 450px;
+    color: white;
+    margin: 0, 150px;
+}
+
+main, aside { height: 234px;
+    background color: #FAF9F9;
+    border border-radius: 20px;
+    float: left;
+
+}
+
+main {
+    width: 646px;
+    height: 234px;
+    background color: #FAF9F9;
+    border border-radius: 20px;
+    margin: 70px 0 0 15px;
+}
+
+aside
+{
+    width: 298px;
+    margin: 70px 15px 0 50px;
+}
