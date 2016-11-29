@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #FFFFFF;
+}
+
+nav {height: 46px;
+    background: #42C5BE;
+    padding: 0,15px;
+}
+
+main {
+    height: 442px;
+    background: #020202;
+}
+
+section{
+    height: 303px;
+    background: #FFFFFF;
+}
+
+footer{
+    height: 154px;
+    background: #020202;
+}
+
+aside{
+    height: 140px;
+    width: 233px;
+    margin-top: 100px;
+    margin-left: 750px;
+    background: #F0EDE5;
+
+}
+
+.logo {font-size: 35px;
+        color: black;
+    margin: 0 200px;}
+
+.copyright {
+    font-size: 17px;
+    color: white;
+    margin: 0 440px;
+
+}
+
+.info {
+    height: 143px;
+    width: 427px;
+    background: #020202;
+    margin-top: -140px;
+    margin-left: 300px;
+}
