@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #EB5757;
+    height: 50px;
+    margin: 0;
+}
+
+footer {
+    background: #F2C94C;
+    height: 390px;
+}
+
+body {
+    background: #F2994A;
+    height: 500px;
+}
+
+.hamburger {
+    background: #FFFEFE;
+    height: 28px;
+    width: 38px;
+    float: right;
+}
+
+aside {
+    background: white;
+    height: 300px;
+    width: 230px;
+    float: right;
+
+
+}
+
+ul {
+    float: left;
+    font-size: 20px;
+     position: absolute;
+}
+
+
