@@ -1,0 +1,96 @@
+#clickme{
+    width: 30px;
+    height: 100px;
+    background: blue;
+    cursor: pointer;
+    margin: 30px;
+    position: relative;
+}
+
+#clickme::before{
+    content: url(../class3/assets/flower.jpg);
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background: #fff;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+#clickme::after{
+
+    content: attr(data-something);
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background: #fff;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+
+a{
+    position: relative;
+
+}
+
+a::after{
+
+    position: absolute;
+    content: attr(data-title);
+    background: orange;
+    bottom: 100%;
+    left: 20%;
+    white-space: nowrap;
+    display: none;
+
+}
+a:hover::after{
+    display: inline-block;
+}
+
+#menu {
+    position: absolute;
+    width: 100px;
+    right: -100px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+tr{
+    padding: 10px;
+    border: 1px dotted #333;
+    background: #eee;
+}
+
+table{
+    margin: 50px;
+}
+
+input, textarea, select {
+    display: block;
+    margin: 20px;
+}
+input[type="checkbox"], input[type="radio"]{
+    display: inline-block;
+    margin: 10px;
+}
+input:focus{
+    box-shadow: 0 0 5px #111;
+
+}
+input:invalid{
+    color:red;
+}
+input:valid{
+    color:green;
+}
+input:required{
+    border: 3px solid purple;
+}
