@@ -4,7 +4,7 @@ $ (function) {
     var s = "50%"
 
     var $mySlider1 = #slider1;
-    var $mySlider1 = #slider2;
+    var $mySlider2 = #slider2;
 
     $mySlider1.on("mouseover", function(){
         $(this).next().css("color",$(this).val());
