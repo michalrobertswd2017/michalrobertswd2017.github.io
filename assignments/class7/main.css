@@ -1,10 +1,26 @@
 #circle {
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	background:hsl(0, 50%, 50%);
 	border-radius: 150px;
 	border-radius: 150px;
 	border-radius: 150px;
     margin: 0px 512px;
+    position: relative;
+
 }
 
+#circle::after{
+    content: attr(data-color);
+    position:absolute;
+    height: 50%;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+    display: none;
+}
+
+#circle::hover:after{
+    display: block;
+}

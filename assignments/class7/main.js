@@ -1,22 +1,16 @@
-$ (function) {
 
-    var h = "50%"
-    var s = "50%"
+   $(function(){
 
-    var $mySlider1 = #slider1;
-    var $mySlider2 = #slider2;
+    var mySlider1 =$("#lightness");
+    var myCircle =$("#circle");
+    var mySlider2 =$("#saturation");
 
-    $mySlider1.on("mouseover", function(){
-        $(this).next().css("color",$(this).val());
-    })
 
-}
-
-$("#mycircle").css("background", "hsl(0, "+s+"%, "+l+"%)");
-
+    $("#saturation,#lightness").on("change mousemove",function(){
+        myCircle.css("background,"hsl(0,"+mySlider1.val()+"%,"+mySlider2.val()+"%");
+        myCircle.data("color","hsl(0,"+mySlider1.val()+"%,"+mySlider2.val()+"%");
     });
 
-   $("#mycircle").data("color","hsl(0, "+s+"%, "+l+"%)");
 });
 
 
