@@ -8,16 +8,21 @@ nav {
     background: #EB5757;
     height: 50px;
     margin: 0;
+    width: 1024px;
 }
 
 footer {
     background: #F2C94C;
     height: 390px;
+    width: 1024px;
 }
 
 body {
     background: #F2994A;
-    height: 500px;
+    width: 1024px;
+    height: 397px;
+    margin: 0px 0px 60px;
+
 }
 
 .hamburger {
@@ -31,7 +36,9 @@ aside {
     background: white;
     height: 300px;
     width: 230px;
-    float: right;
+    margin: 0px 1024px;
+    position: absolute;
+    padding: 20px;
 
 
 }

@@ -1,31 +1,22 @@
 $(function(){
-    var myHamburger = $("hamburger");
-    var myaside = $(".aside");
 
-});
-$myHamburger.on("mouseover", function(){
-        $(this).find("aside").animate(
-            {height: "100px"},
-            {queue: false,
-             duration: 500,
-             easing: "linear",
-             start: function(){
-                 $(this).css("slideIn")
-             }
-            }
-            );
+    var invisible = true;
+    var myRight = "28px";
 
-}).on("mouseleave", function(){
-        $(this).find("aside").animate(
-            {height: "0px"},
-            {queue: false,
-             duration: 500,
-             easing: "linear",
-             complete: function(){
-                 $(this).css("slideOut);
-             }
-            }
+    $(".hamburger").on("click", function(){
+        $("aside").animate(
+            {right: myRight},
+            {queue: false, duration: 500, easing: "linear"}
 
         );
+         if (invisible){
+            myRight = "-100px";
+            invisible = false;
+        }else{
+            myRight = "28px";
+            invisible = true;
+        }
+    });
+
     });
 });
