@@ -1,16 +1,15 @@
 
-   $(function(){
 
-    var mySlider1 =$("#lightness");
-    var myCircle =$("#circle");
-    var mySlider2 =$("#saturation");
+$(function(){
+
+    var saturationSlider = $("#saturation");
+    var lightnessSlider = $("#lightness");
+    var myCircle = $("#circle");
 
 
-    $("#saturation,#lightness").on("change mousemove",function(){
-        myCircle.css("background,"hsl(0,"+mySlider1.val()+"%,"+mySlider2.val()+"%");
-        myCircle.data("color","hsl(0,"+mySlider1.val()+"%,"+mySlider2.val()+"%");
+    $("#saturation, #lightness").on("change mousemove", function(){
+        myCircle.css("background","hsl(0,"+saturationSlider.val()+"%,"+lightnessSlider.val()+"%)");
+        myCircle.attr("data-color","hsl(0,"+saturationSlider.val()+"%,"+lightnessSlider.val()+"%)");
     });
 
 });
-
-

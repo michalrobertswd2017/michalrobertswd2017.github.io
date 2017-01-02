@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <link href="main.css" rel="stylesheet">
+      <head>
+             <title>Class7</title>
+          <link href="main.css" rel="stylesheet">
     </head>
     <body>
+        <p> I read the article and I think its saying don't hard code and write the number paragraph in the html code.Instead use a counter to write the number automaticaly starting from 1 according to how many paragraphs you used. </p>
+<div id="circle" data-color="hsl(0,50%,50%)"></div>
+          <form id="myform">
 
-        <div id="circle" data-color="hsl(0,50%,50%)"></div>
-        <form>
-            <label>saturation</label>
-            <input type="range" id="saturation" value=50>
-            <label>lightness</label>
-            <input type="range" id="lightness" value=50>
-        </form>
+                <input id= "saturation" type="range" name="myrange" min=0 max=100 value="50" step="5"><label for="slider1">Saturated</label>
+              <br>
+                <input id= "lightness" type="range" name="myrange" min=0 max=100 value="50" step="5"><label for="slider2">lightness</label>
 
+            </form>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="main.js"></script>
     </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
 </html>
