@@ -1,0 +1,38 @@
+@font-face{
+    font-family:"contact icons";
+    src: url('heydings_icons.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+span{
+    display: block;
+}
+
+#icon {
+    font-family: "contact icons";
+    font-size: 2.4em;
+}
+
+#maroon{
+    background-color: #632A50;
+    height: 100px;
+    width: 130px;
+    display: block;
+}
+
+#blueish{
+    background-color: #8B9EB7;
+    height: 100px;
+    width: 130px;
+}
+
+#header {
+    font-family: 'Raleway', sans-serif;
+}
+
+#fancy-text{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.6em;
+}
