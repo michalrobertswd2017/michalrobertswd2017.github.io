@@ -1,0 +1,35 @@
+*{ box-sizing: border-box;}
+
+
+    section {
+    position: relative;
+}
+
+.logo {
+    float: left;
+}
+
+.hamburger {
+    float: right;
+}
+
+nav{
+    overflow: hidden;
+}
+
+.main_content {
+    margin: 200px 0 0 20%;
+    width: 40%;
+    display: inline-block;
+}
+
+.side_image{
+    height: 300px;
+    width: 20%;
+    border: 5px solid azure;
+    background-color: grey;
+    display: inline-block;
+    margin: 150px -70px;
+    z-index: -1;
+    position: absolute;
+}
