@@ -1,0 +1,53 @@
+html{
+    background: transparent url("Rainbow-Background-Designs-38299.jpg") no-repeat 0 0 / cover;
+    position: relative;
+    height: 100%;
+}
+
+html::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(166, 160, 93);
+    z-index: -1;
+    background: linear-gradient(to top,transparent,rgba(166, 160, 93, .5));)
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background: rgba(232, 166, 138, 0.4);;
+    margin: 0;
+    }
+
+#nav {
+    text-align: justify;
+    font-size: 25px;
+    }
+
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+img { float: left;}
+
+ nav:hover {
+    color:#fef;
+     background-color: rgba(255, 255, 255, 0.27);
+     opacity: 0.8;
+
+}
+nav li:hover{
+     border-bottom: 2px solid #f62e9b;
+
+}
+
