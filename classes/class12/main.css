@@ -1,0 +1,24 @@
+.thislighbox{
+    display: none;
+}
+
+.featherlight .featherlight-content{
+    background: hsl(30, 100%, 70%);
+    border: 5px solid aqua;
+}
+
+.myslider img{
+    max-height: 800px;
+    width: 100%;
+}
+
+.my2ndSlider img{
+    height: 500px;
+    width: auto;
+}
+
+.rellax{
+    background-color: lightcoral;
+    padding: 35px;
+    z-index: -5;
+}
