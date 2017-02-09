@@ -70,3 +70,10 @@ nav li:hover{
 #child2{
     display: inline-block;
 }
+
+#myfooter{
+
+    background color: peachpuff;
+    height: 20px;
+    width: 100%;
+}
