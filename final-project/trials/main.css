@@ -1,7 +1,10 @@
 html{
-    background: transparent url("Rainbow-Background-Designs-38299.jpg") no-repeat 0 0 / cover;
-    position: relative;
-    height: 100%;
+    background:  transparent url("rainbow 2.jpeg")no-repeat 0 0 / cover;
+       position: relative;
+  background-size: cover;
+
+
+
 }
 
 html::after{
@@ -25,7 +28,9 @@ nav{
 
 #nav {
     text-align: justify;
+    font-family: fantasy;
     font-size: 25px;
+    text-decoration-color: darkgoldenrod;
     }
 
 #nav:after {
@@ -38,7 +43,7 @@ nav{
     display: inline-block;
 }
 
-img { float: left;}
+
 
  nav:hover {
     color:#fef;
@@ -49,5 +54,12 @@ img { float: left;}
 nav li:hover{
      border-bottom: 2px solid #f62e9b;
 
+}
+
+
+.logo{
+
+    width: 10px;
+    height: 10px;
 }
 

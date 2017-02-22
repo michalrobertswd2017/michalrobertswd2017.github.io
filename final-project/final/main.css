@@ -65,15 +65,42 @@ nav li:hover{
 
 #child1{
     display: inline-block;
+    width: 100%
 }
 
 #child2{
     display: inline-block;
+    max-width: 500px;
+
 }
+
 
 #myfooter{
 
     background color: peachpuff;
     height: 20px;
     width: 100%;
+}
+
+.jumbotron{
+    position: relative;
+    color: white;
+    padding: 100px 50px;
+    /*
+    border-bottom-left-radius: 60% 10%;
+    border-bottom-right-radius: 60% 10%;*/
+    background: none;
+}
+.skew-bg{
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(blue, green);
+}
+.header_content{
+    position: relative;
 }
