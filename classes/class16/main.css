@@ -1,0 +1,35 @@
+*{
+    color: hotpink;
+}
+
+h1{
+    color: yellow;
+}
+
+div {
+    height: 400px;
+    background: linear-gradient(rgba(255, 0, 0, .5), rgba(0, 0, 255, .5)),
+    url(../class12/london1.jpeg) no-repeat 80%;
+    color: red;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.my_transition{
+    width: 500px;
+    height: 100px;
+    background: red;
+    color: black;
+    margin: 50px;
+    transition: font-size .5s;
+    padding: 25px;
+
+}
+
+.my_transition:hover{
+    font-size: 2em;
+    color: blue;
+    transform: rotate(125deg)
+}
+
