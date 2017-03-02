@@ -1,0 +1,135 @@
+body{
+    background-color: lightgray;
+    border: 2px solid skyblue;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+
+h1{
+    font-size: 4vw;
+    text-align: center;
+    font-family: "arial black";
+}
+
+h2{
+   font-size:  3vw;
+}
+
+section{
+
+    font-size:  2vw;
+}
+
+.perspective_parent div {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    display: inline-block;
+    transform: rotateY(45deg);
+    transition: 1s;
+    animation: slideleft 1s 1s alternate infinite forwards;
+
+}
+
+.perspective_parent{
+    perspective: 200px;
+/*    vanishing point*/
+    perspective-origin:bottom left;
+}
+
+/*when hover it change back to original box*/
+.perspective_parent div:hover{
+/*    transform:rotateX(0deg) ;*/
+    transition: 1s;
+    animation-play-state: paused;
+
+
+}
+
+@keyframes slideleft{
+    0% {
+        transform: translateX(0);
+    }
+/*
+    50% {
+        transform: translateX(10px);
+    }
+*/
+    100%{
+        transform: translateX(-20px);
+    }
+}
+
+.perspective_parent div:nth-child(1){
+    background: skyblue;
+    transform: translateZ(-123px)
+}
+.perspective_parent div:nth-child(2){
+    background: lightpink;
+    transform: translateZ(20px);
+}
+.perspective_parent div:nth-child(3){
+    background: cyan;
+}
+
+@media (max-width: 450px){
+    section{
+
+    font-size:  4vw;
+}
+}
+
+.progress_bar{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: hsl(250, 40%, 20%);
+    box-shadow: 0px -2px 1px 2px hsl(250, 40%, 50%) inset;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.progress_bar div{
+    width: 20%;
+    height: 100%;
+    background-color: orange;
+    box-shadow: 0px 2px 8px 4px hsl(0, 20%, 100%) inset;
+    border-radius: 20px;
+    animation: abc 1s ease;
+    transition: 2s;
+    position: relative;
+}
+
+.progress_bar div::after{
+    position: absolute;
+    content'';
+    top: 0; left: 0; bottom: 0; right: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(-45deg, hsla(250, 40%, 70%, .9) 25%, transparent 25%, transparent 50%,
+                    hsla(250, 40%, 70%, .9) 50%,  hsla(250, 40%, 70%, .4) 75%, transparent 75%, transparent 100%);
+    background-size: 50px 50px;
+    animation: stripe
+}
+
+@keyframes abc{
+    from{
+        width: 0%;
+    }
+    to{
+      width: 100%
+    }
+}
+
+@keyframes stripe{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+      width: 100%
+    }
+}
